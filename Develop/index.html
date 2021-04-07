@@ -28,10 +28,39 @@
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
+
+    <!-- Timeblocks go here -->
+
     <div class="container">
-      <!-- Timeblocks go here -->
+      <div class="row" id="0">
+        <div class="col-md-1 hour">
+          <p class="time date" id="time">
+          </p>
+        </div>
+        <div class="col-md-10 time-block">
+          <textarea class="todo input" placeholder="Tasks" id="here" for="task-text">
+          </textarea>
+      </div>
+      <button type="button" class="saveBtn"><a class="fas fa-save">
+      </a>
+      </button>
     </div>
 
+    <!-- Add extra timeblocks -->
+
+    <div class="extras">   
+    </div>
+
+    <!-- Clear button -->
+
+    <div class=clear>
+      <button type="button" class="clearBtn">Clear</button>
+    </div>
+
+    <!-- dayjs template obtained from day.js.org -->
+
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+    <script>dayjs().format()</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   </body>
