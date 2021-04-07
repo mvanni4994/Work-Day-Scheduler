@@ -13,7 +13,7 @@ You may return to the application at any time as the data is saved to your local
 
 ## App Features
 
-![image](assets/images/wdScheduler.JPG)
+![image](https://raw.githubusercontent.com/mvanni4994/Work-Day-Scheduler/main/assets/images/wdScheduler.JPG)
 
 ## Technology Used
 JavaScript, JQuery, HTML, CSS, Day.js
