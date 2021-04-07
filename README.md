@@ -3,7 +3,7 @@ Work Day Scheduler [![MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]
 ## Description
 An easy application that acts as a personal assistant. Use the Work Day Scheduler to plan out your day and important tasks you have to complete.
 
-Deployed App:
+Deployed App: https://mvanni4994.github.io/Work-Day-Scheduler/
 
 Github Repository: https://github.com/mvanni4994
 
