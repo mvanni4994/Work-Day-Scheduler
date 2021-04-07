@@ -4,9 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Work Day Scheduler"
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.js"
+    integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM="
+    crossorigin="anonymous">
+    </script>
+
+    <link rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" 
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"
     />
     <link
       rel="stylesheet"
@@ -27,23 +38,23 @@
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
+      <p id="currentTime" class="lead"></p>
     </header>
 
     <!-- Timeblocks go here -->
 
-    <div class="container">
       <div class="row" id="0">
         <div class="col-md-1 hour">
           <p class="time date" id="time">
           </p>
         </div>
         <div class="col-md-10 time-block">
-          <textarea class="todo input" placeholder="Tasks" id="here" for="task-text">
-          </textarea>
+          <textarea class="todo input" placeholder="Tasks" id="here" for="task-text"></textarea>
       </div>
-      <button type="button" class="saveBtn"><a class="fas fa-save">
-      </a>
-      </button>
+    
+      <!-- Save Button -->
+    
+      <button type="button" class="saveBtn"><a class="fas fa-save"></a></button>
     </div>
 
     <!-- Add extra timeblocks -->
@@ -51,17 +62,11 @@
     <div class="extras">   
     </div>
 
-    <!-- Clear button -->
-
-    <div class=clear>
-      <button type="button" class="clearBtn">Clear</button>
-    </div>
-
     <!-- dayjs template obtained from day.js.org -->
 
     <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
-    <script>dayjs().format()</script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  </body>
+    <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+</body>
 </html>
